@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --bg-color: white;
+      --text-color: black;
+    }
+
+    .dark {
+      --bg-color: black;
+      --text-color: white;
+    }
+
+    body {
+      background: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body id="page">
+
+<button onclick="toggleTheme()">Toggle Theme</button>
+<p>Theme changes using CSS variables</p>
+
+<script>
+function toggleTheme() {
+  document.getElementById("page").classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
